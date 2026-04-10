@@ -1,5 +1,19 @@
 import Link from "next/link";
 
+
+import { Geist, Oswald } from 'next/font/google'
+ 
+const geist = Geist({
+    weight:"400",
+  subsets: ['latin'],
+})
+
+const oswald = Oswald({
+    weight:"400",
+  subsets: ['latin'],
+})
+
+
 const UsersPage = async () => {
   const data = await fetch("https://jsonplaceholder.typicode.com/users");
   const posts = await data.json();
@@ -7,7 +21,7 @@ const UsersPage = async () => {
   // console.log(post);
 
   return (
-    <div className="grid grid-cols-3 gap-5">
+    <div className ={`grid grid-cols-3 gap-5 ${oswald.className}`}>
       
       {posts.map((post) => (
         <div
