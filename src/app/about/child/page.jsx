@@ -3,7 +3,7 @@
 const ChildPage = () => {
     return (
         <div>
-            <h1>childpage</h1>
+            <h1>childPage</h1>
         </div>
     );
 };

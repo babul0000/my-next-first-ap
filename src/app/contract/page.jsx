@@ -60,7 +60,7 @@ const data = [
                 data.map(dat => <div key={dat.id}>
                     
                     <h2>{dat.title}</h2>
-                    <Link href={`/bloge/${blog.id}`}> show details </Link>
+                    <Link href={`/blog/${dat.id}`}> show details </Link>
 
                     </div>
                     )}

@@ -49,30 +49,21 @@ const data = [
 ];
 
 const BlogPageDetails = async ({ params}) => {
-    const {bloge} = await params;
+    const {blog} = await params;
 
-    const blog = data.find(item => item.id === parseInt(bloge));
+    const blo = data.find(item => item.id === parseInt(blog));
 
-    console.log("params pacha", blog);
+    console.log("params pacha", blo);
 
-    // if (!blog) {
-    // return (
-    //     <div className="min-h-screen flex items-center justify-center">
-    //     <div className="text-center">
-    //         <h1 className="text-3xl font-bold text-red-500 mb-4">Blog Not Found</h1>
-    //         <p className="text-gray-400">ID {id} এর কোনো ভ্লগ পাওয়া যায়নি।</p>
-    //     </div>
-    //     </div>
-    // );
-    // }
+    
     
     return (
         <div>
             <h1>blog details coming soon</h1>
 
             {
-                blog && <div>
-                    <h2>{blog.title}</h2>
+                blo && <div>
+                    <h2>{blo.title}</h2>
                 </div>
             }
         </div>
